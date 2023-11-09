@@ -2,6 +2,22 @@
 
 **Author:** Adrián Darío Hidalgo Flores
 
+# Summary
+
+1. [Project structure](#project-structure)
+2. [API Rest](#api-rest)
+3. [TODOs](#todos)
+4. [Setup](#setup)
+
+# Project structure
+
+This project includes two applications:
+
+1. Frontend: Make in Angular
+2. Backend: Make in ExpressJs wit Typescript
+
+Each project works independently. This means that each project has its own package.json and can be run separately.
+
 # API Rest
 
 ## Deserts
@@ -50,8 +66,9 @@ Here is a list of requirements that have not been covered yet.
 
 ## Technical Requirements:
 
-1. **AWS Architecture and Deployment:** The structure easily allows for this. I only need to add the `serverless-http` library and wrap the API.
-2. **GraphQL API:** I follow a Clean Architecture, which means I have services that can be called by GraphQL instead of Express Routes.
+1. **MySQL** To enhance development efficiency, I opted to use SQLite. I intend to implement configurations for migrating to MySQL, but this shouldn't be a complex task since I utilized Sequelize, which simplifies this process.
+2. **AWS Architecture and Deployment:** The structure easily allows for this. I only need to add the `serverless-http` library and wrap the API.
+3. **GraphQL API:** I follow a Clean Architecture, which means I have services that can be called by GraphQL instead of Express Routes.
 
 ## Nice to have
 
@@ -71,8 +88,6 @@ If you're utilizing a TODOs plugin in VSCode, you can access a comprehensive lis
 ## Documentation
 
 1. Setup - Backend
-2. Development - \*
-3. Production - \*
 
 # Setup
 
@@ -89,7 +104,3 @@ DATABASE_FORCE_SYNC = 0 #  Forced initialization of tables: 1 (yes), 0 (no)
 ```
 
 ## Backend
-
-# Development
-
-# Production
