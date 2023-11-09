@@ -1,0 +1,46 @@
+<!-- <button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+  Agregar
+</button> -->
+<!-- Filters -->
+<div>
+  <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+    <app-desert-select formControlName="desert"></app-desert-select>
+    <input formControlName="water"
+      class="h-10 px-4 py-2 rounded-md border border-gray-400 focus:outline-none focus:ring focus:border-blue-500"
+      type="number" placeholder="Litros de agua">
+    <button type="submit"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      Buscar
+    </button>
+    <button type="reset"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      Limpiar
+    </button>
+  </form>
+</div>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th class="px-6 py-3 bg-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        ID</th>
+      <th class="px-6 py-3 bg-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        Name</th>
+      <th class="px-6 py-3 bg-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        Water</th>
+      <!-- <th class="px-6 py-3 bg-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        Coordinates</th> -->
+    </tr>
+  </thead>
+  <tbody *ngFor="let oasis of oases">
+    <tr>
+      <td class="px-6 py-4 whitespace-no-wrap">{{oasis.id}}</td>
+      <td class="px-6 py-4 whitespace-no-wrap">{{oasis.name}}</td>
+      <td class="px-6 py-4 whitespace-no-wrap">{{oasis.water}} litters</td>
+      <!-- <td class="px-6 py-4 whitespace-no-wrap">
+        Lat: {{oasis.coordinates.latitude}} Lng: {{oasis.coordinates.longitude}}
+      </td> -->
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,6 @@
+<nav>
+  <ul *ngFor="let link of links">
+    <li><a routerLink="{{link.route}}" class="block p-2 hover:bg-gray-600"
+        [ngClass]="{'active-link': isActive(link.route)}">{{link.title}}</a></li>
+  </ul>
+</nav>
