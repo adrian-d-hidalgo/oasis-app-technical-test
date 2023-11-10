@@ -13,8 +13,8 @@
 
 This project includes two applications:
 
-1. Frontend: Make in Angular
-2. Backend: Make in ExpressJs wit Typescript
+1. Frontend: Angular
+2. Backend: ExpressJs and Typescript
 
 Each project works independently. This means that each project has its own package.json and can be run separately.
 
@@ -87,11 +87,11 @@ If you're utilizing a TODOs plugin in VSCode, you can access a comprehensive lis
 
 ## Documentation
 
-1. Setup - Backend
+1. Setup - Frontend
 
 # Setup
 
-## Frontend
+## Backend
 
 Create a copy of .env and replace it with the following example:
 
@@ -103,4 +103,4 @@ APP_PORT = 8000 # Or port that you want to use
 DATABASE_FORCE_SYNC = 0 #  Forced initialization of tables: 1 (yes), 0 (no)
 ```
 
-## Backend
+## Frontend
