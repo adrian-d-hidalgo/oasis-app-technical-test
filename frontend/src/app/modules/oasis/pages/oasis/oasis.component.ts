@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
 import { OasisService } from '../../../api/services/oasis/oasis.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 type Oasis = {
   id: number;
@@ -46,7 +47,6 @@ export class OasisComponent implements OnInit {
       desertId: desert ? Number(desert) : undefined,
       water: water ? Number(water) : undefined,
     };
-    console.warn({ filters });
     this.getAll(filters);
   }
 }
